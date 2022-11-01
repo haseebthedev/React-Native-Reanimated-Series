@@ -10,8 +10,8 @@ const App = () => {
                 {/* <AnimatedTabs /> */}
                 {/* <AnimatedTabsWithGestures /> */}
                 {/* <SimpleLottieAnimation /> */}
-                {/* <PanGestureHandlerWithRE /> */}
-                <InterpolateScrollView />
+                <PanGestureHandlerWithRE />
+                {/* <InterpolateScrollView /> */}
             </View>
         </GestureHandlerRootView>
     );

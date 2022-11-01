@@ -1,7 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
-import {AnimatedTabs, AnimatedTabsWithGestures, SimpleLottieAnimation, PanGestureHandlerWithRE, InterpolateScrollView} from './components';
+import {AnimatedTabs, AnimatedTabsWithGestures, SimpleLottieAnimation, PanGestureHandlerWithRE, InterpolateScrollView, InterpolateColor} from './components';
 
 const App = () => {
     return (
@@ -11,7 +11,8 @@ const App = () => {
                 {/* <AnimatedTabsWithGestures /> */}
                 {/* <SimpleLottieAnimation /> */}
                 {/* <PanGestureHandlerWithRE /> */}
-                <InterpolateScrollView />
+                {/* <InterpolateScrollView /> */}
+                <InterpolateColor />
             </View>
         </GestureHandlerRootView>
     );

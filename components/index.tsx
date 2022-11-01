@@ -4,3 +4,4 @@ export * from './Lottie';
 export * from './PanGestureHandler'
 export * from './InterpolateScrollView';
 export * from './InterpolateColor';
+export * from './PinchToZoom';

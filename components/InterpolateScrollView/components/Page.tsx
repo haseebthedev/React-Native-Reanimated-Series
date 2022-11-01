@@ -52,7 +52,10 @@ const styles = StyleSheet.create({
         height: BOX_SIZE,
         backgroundColor: 'rgba(0,0,256, 0.4)',
     },
-    text: {color: '#FFF', fontSize: 50},
+    text: {
+        color: '#FFF',
+        fontSize: 50,
+    },
 });
 
 export default Page;

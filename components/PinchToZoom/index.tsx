@@ -21,6 +21,8 @@ const PinchToZoom = () => {
         },
         onEnd: () => {
             scale.value = withTiming(1);
+            focalX.value = withTiming(0);
+            focalY.value = withTiming(0);
         },
     });
 

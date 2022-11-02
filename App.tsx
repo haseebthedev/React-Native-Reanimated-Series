@@ -1,7 +1,6 @@
 import React from 'react';
-import {View} from 'react-native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
-import {PinchToZoom, AnimatedTabs, AnimatedTabsWithGestures, SimpleLottieAnimation, PanGestureHandlerWithRE, InterpolateScrollView, InterpolateColor} from './components';
+import {DoubleTabHandler, PinchToZoom, AnimatedTabs, AnimatedTabsWithGestures, SimpleLottieAnimation, PanGestureHandlerWithRE, InterpolateScrollView, InterpolateColor} from './components';
 
 const App = () => {
     return (
@@ -13,8 +12,8 @@ const App = () => {
             {/* <PanGestureHandlerWithRE /> */}
             {/* <InterpolateScrollView /> */}
             {/* <InterpolateColor /> */}
-            <PinchToZoom />
-            {/* </View> */}
+            {/* <PinchToZoom /> */}
+            <DoubleTabHandler />
         </GestureHandlerRootView>
     );
 };

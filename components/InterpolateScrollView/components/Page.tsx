@@ -16,12 +16,8 @@ const Page = ({title, index, translateX}: Props) => {
 
     const rStyle = useAnimatedStyle(() => {
         let scale = interpolate(translateX.value, inputRange, [0, 1, 0], Extrapolate.CLAMP);
-        return {transform: [{scale}]};
-    });
-
-    const brStyles = useAnimatedStyle(() => {
         let radius = interpolate(translateX.value, inputRange, [0, BOX_SIZE / 2, 0], Extrapolate.CLAMP);
-        return {borderRadius: radius};
+        return {transform: [{scale}], borderRadius: radius};
     });
 
     const rTextStyles = useAnimatedStyle(() => {
@@ -32,7 +28,7 @@ const Page = ({title, index, translateX}: Props) => {
 
     return (
         <View style={[styles.pageContainer, {backgroundColor: `rgba(0,0,256, 0.${index + 2})`}]}>
-            <Animated.View style={[styles.box, rStyle, brStyles]} />
+            <Animated.View style={[styles.box, rStyle]} />
             <Animated.View style={[{position: 'absolute'}, rTextStyles]}>
                 <Text style={styles.text}>{title}</Text>
             </Animated.View>

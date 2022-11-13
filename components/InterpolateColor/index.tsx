@@ -3,6 +3,7 @@ import {StyleSheet, Switch} from 'react-native';
 import Animated, {interpolateColor, useAnimatedStyle, useDerivedValue, withTiming} from 'react-native-reanimated';
 
 type ThemeType = 'light' | 'dark';
+
 const colors = {
     darkTheme: {backgroundColor: '#262626', text: '#e1e1e1'},
     lightTheme: {backgroundColor: '#ffffff', text: '#262626'},

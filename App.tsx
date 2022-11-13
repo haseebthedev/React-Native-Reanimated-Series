@@ -5,11 +5,11 @@ import {DoubleTabHandler, PinchToZoom, AnimatedTabs, AnimatedTabsWithGestures, S
 const App = () => {
     return (
         <GestureHandlerRootView style={{flex: 1}}>
-            <AnimatedTabs />
+            {/* <AnimatedTabs /> */}
             {/* <AnimatedTabsWithGestures /> */}
             {/* <SimpleLottieAnimation /> */}
             {/* <PanGestureHandlerWithRE /> */}
-            {/* <InterpolateScrollView /> */}
+            <InterpolateScrollView />
             {/* <InterpolateColor /> */}
             {/* <PinchToZoom /> */}
             {/* <DoubleTabHandler /> */}

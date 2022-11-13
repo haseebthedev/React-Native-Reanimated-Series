@@ -13,12 +13,19 @@ const AnimatedTabs = () => {
   const offset = useSharedValue(0);
   const currTab = useSharedValue(0);
 
+  /**
+   * This is for animated slider effect / tab white background
+   */
   const animatedBarStyles = useAnimatedStyle(() => {
     return {
       transform: [{translateX: offset.value}],
     };
   });
 
+
+  /**
+   * These two animated styles change opacity of Text upon selection
+   */
   const TextStylesFirst = useAnimatedStyle(() => {
     if (offset.value === currTab.value) {
       return {
@@ -43,16 +50,6 @@ const AnimatedTabs = () => {
     }
   });
 
-  let onPressHandler = () => {
-    if (currTab.value === 0) {
-      offset.value = withTiming(width - width * 0.5);
-      currTab.value = 1;
-    } else {
-      offset.value = withTiming(0);
-      currTab.value = 0;
-    }
-  };
-
   let onFirstTabPress = () => {
     offset.value = withTiming(width - width * 0.5);
     currTab.value = 1;
@@ -66,6 +63,7 @@ const AnimatedTabs = () => {
   return (
     <View style={{flex: 1, backgroundColor: '#fff'}}>
       <Animated.View style={styles.container}>
+        
         <Animated.View style={[styles.bar, animatedBarStyles]}></Animated.View>
         <TouchableOpacity onPress={onSecondTabPress} activeOpacity={0.8}>
           <Animated.Text style={[styles.text, TextStylesFirst]}>
@@ -79,7 +77,7 @@ const AnimatedTabs = () => {
           </Animated.Text>
         </TouchableOpacity>
       </Animated.View>
-      {/* <Button title="Click Me" onPress={onPressHandler} /> */}
+
     </View>
   );
 };

@@ -6,3 +6,4 @@ export * from './InterpolateScrollView';
 export * from './InterpolateColor';
 export * from './PinchToZoom';
 export * from './DoubleTabHandler';
+export * from './CustomScrollView';

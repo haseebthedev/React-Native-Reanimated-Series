@@ -16,14 +16,14 @@ const App = () => {
     return (
         <GestureHandlerRootView style={{flex: 1}}>
             {/* <AnimatedTabs /> */}
-            {/* <AnimatedTabsWithGestures /> */}
+            <AnimatedTabsWithGestures />
             {/* <SimpleLottieAnimation /> */}
             {/* <PanGestureHandlerWithRE /> */}
             {/* <InterpolateScrollView /> */}
             {/* <InterpolateColor /> */}
             {/* <PinchToZoom /> */}
             {/* <DoubleTabHandler /> */}
-            <CustomScrollView />
+            {/* <CustomScrollView /> */}
         </GestureHandlerRootView>
     );
 };
